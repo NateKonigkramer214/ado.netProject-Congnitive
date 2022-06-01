@@ -7,17 +7,23 @@ using System.Data.SqlClient;
 
 namespace Registration 
 {
-  public class Registration
+  public class Registration_Class
   {
-        private SqlConnection Conn = new SqlConnection();
+        private SqlConnection Obj_Conn = new SqlConnection();
         private SqlCommand Cmd = new SqlCommand();
         private SqlDataReader Reader_Login;
         string QueryString;
         
-        Public Regisration()
+        Public Registration_Class()
         {
+          //Add connection String
+          String Conn = @""; 
+           Obj_Conn.ConnectionString = ConnString;
+        }
         
-        
+        public string Registration(string UserName, string Email, string Password)
+        {
+          //Insert into user details
         }
         
   }

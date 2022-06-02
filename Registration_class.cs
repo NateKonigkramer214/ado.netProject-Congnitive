@@ -33,6 +33,7 @@ namespace Audio_Box_2._0
                 //Insert query that will insert userdata for registration
                 QueryString = "Insert into UserDetails(Username,Email, Password) Values(@Username, @Email, @Password)";
                 //Add method that takes a String and an Object.
+                // AddWithValue (string parameterName, object value);
                 Cmd.Parameters.AddWithValue("@Username", Username); 
                 Cmd.Parameters.AddWithValue("@Email", Email);
                 Cmd.Parameters.AddWithValue("@Password", Password);
